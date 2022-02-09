@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 //ADD IMAGES
-import AvatarIcon from "../src/images/avatar.png";
-import MyAvatar from "./components/MyAvatar";
-
-//REACT icons
-import { GiWomanElfFace } from "react-icons/gi";
 
 class App extends Component() {
   render() {
