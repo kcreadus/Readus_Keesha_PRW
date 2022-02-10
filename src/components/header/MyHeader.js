@@ -1,28 +1,20 @@
 import React from "react";
 // import Component
-import AvatarIcon from "./src/images/avatar.png";
-import MyAvatar from "./src/components/MyAvatar.js";
+import ImageUrl from "../../images/avatar.png";
+import MyIcons from "../MyIcons";
 
 const MyHeader = (props) => {
   return (
     <header style={styles.myHeader}>
       <div style={styles.left}>
         <div style={styles.logo}></div>
-        <h1>Natural Hair Care</h1>
+        <h1>The Mane Event</h1>
       </div>
       <div style={styles.searchCont}>
-        <span style={styles.inputIcon}>
-          <Icon />
-        </span>
         <input type="text" style={styles.inputwithIcon} placeholder="Search" />
       </div>
-      <div style={styles.rightside}>
-        <button style={styles.rightIcons}>
-          <Icon />
-        </button>
-        <button style={styles.rightIcons}>
-          <Icon />
-        </button>
+      <div style={styles.rightSide}>
+        <MyIcons IconImg={ImageUrl} />
       </div>
     </header>
   );
