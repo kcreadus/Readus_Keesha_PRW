@@ -33,7 +33,7 @@ export default MyHeader;
 const styles = {
   header: {
     // margin: '1';
-    backgroundColor: "black",
+    backgroundColor: "#391832",
     color: "rgb(163,173,194)",
     display: "flex",
     flexDirection: "row",
@@ -56,7 +56,7 @@ const styles = {
     alignItems: "center",
   },
   searchCont: {
-    border: "1px solid #ddd",
+    border: "1px solid #9AC6C5",
     display: "flex",
     flexDirection: "row",
     borderRadius: "2px",
@@ -85,7 +85,7 @@ const styles = {
     
   },
   searchIcon: {
-    background: "#ddd",
+    background: "#7785AC",
     padding: "10px",
     display: "flex",
     alignItems: "center",
