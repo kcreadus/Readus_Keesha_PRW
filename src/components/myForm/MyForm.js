@@ -6,6 +6,7 @@ import "../buttons/MyBtn.css"
 import { VscChromeClose } from "react-icons/vsc";
 import MyImages from '../MyImages'
 import BackGround from "../../images/hair.jpg"
+import "./MyForm.css"
 
 const MyForm = (props) => {
 
@@ -45,7 +46,8 @@ return (
         </div>
         </div>
         <div style={styles.postContainer}>
-            <p>I deep condition my hair least twice a month.
+            <p>
+              I deep condition my hair least twice a month.
              </p>
         </div>
         <div style={styles.flexbox}>
@@ -63,7 +65,7 @@ const styles = {
   color: "rgb(163,173,194)",
   display: "flex",
   flexDirection: "column",
-width:"75%"
+width:"100%"
  },   
   myForm: {
       display: "flex",
@@ -86,7 +88,8 @@ width:"75%"
     marginRight: "5%",
     backgroundColor: "#9AC6C5",
     color: "black",
-    borderRadius: "2%"
+    borderRadius: "2%",
+   
 },
 
   postContainer: {
@@ -96,6 +99,7 @@ width:"75%"
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
+    
   }, 
   input:{
       padding: "2%",
@@ -110,7 +114,8 @@ width:"75%"
 justifyContent: "space-between",
     width: "80%",
     marginLeft: "7%",
-    marginTop: "5%"
+    marginTop: "5%",
+    fontSize: "1.4rem"
   },
   outputContainer: {
     display: "flex",
@@ -119,7 +124,8 @@ justifyContent: "space-between",
 justifyContent: "space-between",
     width: "85%",
     marginLeft: "7%",
-    marginTop: "5%"
+    marginTop: "5%",
+    fontSize: "1.4rem"
   },
   span: {
     whiteSpace: "nowrap",

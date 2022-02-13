@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import MyHeader from "./components/header/MyHeader";
 import Navigation from "./components/nav/Navigation";
 import MyForm from "./components/myForm/MyForm";
+import MyAds from "./components/ads/MyAds"
+import Hydrate from "./images/hydrate.jpg"
+import NaturalHair from "./images/naturalHair.jpg"
+
 
 //ADD IMAGES
 
@@ -16,7 +20,11 @@ class App extends Component {
             <MyForm placeholder="Create Post"/>
           </div>
           <aside style={styles.ads}>
-
+        
+            <MyAds img={Hydrate}
+            title="Hydration" description="The amount of water you should be drinking is likely to vary depending on your age/height/weight but I personally would recommend 2-3 litres daily!"  />
+            <MyAds  img={NaturalHair}
+            title="Nutition Tips" description="A study showed that 38% of women who experience hair loss were found to have a biotin deficiency."/>
 
           </aside>
         </div>
@@ -28,8 +36,7 @@ export default App;
 
 const styles = {
   wrapper: {
-    display: "flex",
-    flexFlow: "row Wrap"
+    fontFamily: ''
 
   },
   
@@ -48,13 +55,17 @@ const styles = {
   },
   main: {
     display: 'flex',
-    flex: 2 
+    flex: 1
+
   },
   ads: {
+    backgroundColor: "#7785AC",
+    color: "rgb(163,173,194)",
+    display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    paddingLeft: 20,
-    paddingRight: 20,
-    color: "lightgrey",
-  },
-};
+     width:"25%",
+alignItems: "center"
+
+},
+
+}

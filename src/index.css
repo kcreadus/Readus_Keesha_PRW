@@ -6,5 +6,51 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*Swatch name = React Project = https://coolors.co/7785ac-9ac6c5-a5e6ba-a3320b-391832
+/* CSS HEX *//*  
+--shadow-blue: #7785acff;
+--opal: #9ac6c5ff;
+--celadon: #a5e6baff;
+--chinese-red: #a3320bff;
+--dark-purple: #391832ff;
 
+/* CSS HSL *//*
+--shadow-blue: hsla(224, 24%, 57%, 1);
+--opal: hsla(179, 28%, 69%, 1);
+--celadon: hsla(139, 57%, 77%, 1);
+--chinese-red: hsla(15, 87%, 34%, 1);
+--dark-purple: hsla(313, 41%, 16%, 1);
 
+/* SCSS HEX *//*
+$shadow-blue: #7785acff;
+$opal: #9ac6c5ff;
+$celadon: #a5e6baff;
+$chinese-red: #a3320bff;
+$dark-purple: #391832ff;
+
+/* SCSS HSL *//*
+$shadow-blue: hsla(224, 24%, 57%, 1);
+$opal: hsla(179, 28%, 69%, 1);
+$celadon: hsla(139, 57%, 77%, 1);
+$chinese-red: hsla(15, 87%, 34%, 1);
+$dark-purple: hsla(313, 41%, 16%, 1);
+
+/* SCSS RGB *//*
+$shadow-blue: rgba(119, 133, 172, 1);
+$opal: rgba(154, 198, 197, 1);
+$celadon: rgba(165, 230, 186, 1);
+$chinese-red: rgba(163, 50, 11, 1);
+$dark-purple: rgba(57, 24, 50, 1);
+
+/* SCSS Gradient *//*
+$gradient-top: linear-gradient(0deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-right: linear-gradient(90deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-bottom: linear-gradient(180deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-left: linear-gradient(270deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-top-right: linear-gradient(45deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-bottom-right: linear-gradient(135deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-top-left: linear-gradient(225deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-bottom-left: linear-gradient(315deg, #7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff);
+$gradient-radial: radial-gradient(#7785acff, #9ac6c5ff, #a5e6baff, #a3320bff, #391832ff); 
+  
+*/
