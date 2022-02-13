@@ -1,0 +1,9 @@
+.button {
+    padding: 15px 32px!important;
+   -webkit-transition-duration: 0.4s;
+   transition-duration: 0.4s;
+   text-decoration: none;
+}
+.button:hover {
+    opacity: 1;
+  }

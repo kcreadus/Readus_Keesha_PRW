@@ -9,7 +9,7 @@ const styles = {
   myAvatar: {
     height: "3em",
     cursor: "pointer",
-    marginRight: "10%",
+    marginRight: "5%",
     borderRadius: "50%",
   },
 };

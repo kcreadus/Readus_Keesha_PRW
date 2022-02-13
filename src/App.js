@@ -13,7 +13,7 @@ class App extends Component {
         <div style={styles.container}>
           <Navigation style={styles.nav} />
           <div style={styles.main}>
-            <MyForm />
+            <MyForm placeholder="Create Post"/>
           </div>
           <aside style={styles.ads}>
 
@@ -27,6 +27,11 @@ class App extends Component {
 export default App;
 
 const styles = {
+  wrapper: {
+    display: "flex",
+    flexFlow: "row Wrap"
+
+  },
   
   container: {
     display: 'flex',
@@ -39,10 +44,11 @@ const styles = {
   nav: {
     display: 'flex',
     
+
   },
   main: {
     display: 'flex',
-    flex: 2
+    flex: 2 
   },
   ads: {
     flexDirection: "column",
