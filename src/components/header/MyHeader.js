@@ -1,8 +1,8 @@
 import React from "react";
 // import Component
 import ImageUrl from "../../images/avatar.png";
-import MyIcons from "../MyIcons";
 import MyAvatar from "../MyAvatar";
+import { FaSearch, FaCog } from "react-icons/fa";
 
 const MyHeader = (props) => {
   return (
@@ -12,6 +12,7 @@ const MyHeader = (props) => {
         <h1 style={styles.h1}>{props.pgTitle}</h1>
       </div>
       <div style={styles.searchCont}>
+        <FaSearch style={styles.searchIcon} alt="Search Icon" />
         <input
           type="text"
           style={styles.inputwithIcon}
@@ -19,7 +20,9 @@ const MyHeader = (props) => {
         />
       </div>
       <div style={styles.rightSide}>
-        <MyAvatar AvatarIcon={ImageUrl} />
+        <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
+        <span style={styles.span}>Keesha Readus</span>
+        <FaCog style={styles.cog} />
       </div>
     </header>
   );
@@ -37,7 +40,6 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "1%",
-    boxShadow: "1px 6px 1px 1px rgba(0, 0, 255, .1)",
   },
   left: {
     display: "flex",
@@ -60,23 +62,37 @@ const styles = {
     borderRadius: "2px",
     width: "40%",
   },
-  inputIcon: {
+  inputwithIcon: {
+    border: "none",
+    flex: 1,
+    padding: "5px",
+  },
+  rightSide: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    width: "15%"
+   
+  },
+
+  h1: {
+    fontSize: "22px",
+  },
+  cog: {
+    height: "2em",
+    width: "2em",
+    cursor: "pointer",
+    
+  },
+  searchIcon: {
     background: "#ddd",
     padding: "10px",
     display: "flex",
     alignItems: "center",
     fontSize: "1rem",
   },
-  inputwithIcon: {
-    border: "none",
-    flex: 1,
-    padding: "10px",
+  span: {
+    whiteSpace: "nowrap",
+    marginRight: "10%",
   },
-  rightSide: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    marginRight: "3%"
-  },
-  rightIcons: {},
 };
