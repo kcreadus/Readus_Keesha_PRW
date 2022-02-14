@@ -21,3 +21,15 @@ const  Card = (props) => {
     )
 }
 export default Card;
+/*justify-content is always on main axis*/
+/*align-items is always on the cross axis*/
+/* an item in a flex container can be a flex container as well*/
+const styles = {
+    myArticle: {
+        display: "flex",
+        flexDirection: "column",
+        width: "300px",
+        height: "40%",
+        backgroundColor: "whiteSmoke",
+        color: "black",
+}
