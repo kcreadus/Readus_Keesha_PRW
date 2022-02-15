@@ -20,10 +20,7 @@ const styles = {
   textDecoration: "none",
   display: "inlineBlock",
   fontSize: "16px",
-  marginTop: "4px",
-  marginBottom: "4px",
-  marginLeft: "22px",
-  marginRight: "2px",
+  width: "670px",
   cursor: "pointer",
   borderRadius: "6px"
      }

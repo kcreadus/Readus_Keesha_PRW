@@ -9,13 +9,13 @@ const styles = {
   myImages: {
       flex: "auto",
     maxWidth: "95%",
-    height: "auto",
+    height: "100%",
     margin: "2%",
     borderRadius: "2%",
     borderColor: "#391832"
   },
   adImages:{
-      flex: "auto",
+  
       maxWidth: "100%",
       height: "auto",
       margin: "2%",

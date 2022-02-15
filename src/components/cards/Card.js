@@ -1,12 +1,14 @@
 import React from "react";
+import MyImages from "../MyImages"
 
 
 const  Card = (props) => {
     return(
         <article style={styles.myArticle}>
-            <div style={styles.flexbox}>
+            <div style={styles.imgContainer}>
             <MyImages ImageIcon={props.img} alt={props.alt} />
-            </div >
+            </div>
+            <div style={styles.cardContent}>
             <div>
             <h1>{props.title}</h1>
             </div>
@@ -16,6 +18,7 @@ const  Card = (props) => {
             <div style={styles.buttons}>
              <button type="submit" style={styles.cardButton}>SHARE</button>
              <button type="submit" style={styles.cardButton}>LEARN MORE</button> 
+            </div>
             </div>
         </article>
     )
@@ -28,8 +31,22 @@ const styles = {
     myArticle: {
         display: "flex",
         flexDirection: "column",
-        width: "300px",
-        height: "40%",
+        width: "250px",
+        height: "350px",
         backgroundColor: "whiteSmoke",
-        color: "black",
+        color: "black"
+        
+},
+  imgContainer: {
+display: "flex",
+width: "100%",
+height: "175px",
+justifyContent: "space-around",
+backgroundColor: "whiteSmoke"
+  },
+  cardContent: {
+      margin: "1rem",
+      marginTop: "0.5rem"
+  },
+
 }
