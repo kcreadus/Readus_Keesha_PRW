@@ -5,13 +5,10 @@ import MyForm from "./components/myForm/MyForm";
 import MyAds from "./components/ads/MyAds";
 import NaturalHair from "./images/naturalHair.jpg";
 
-
 //ADD IMAGES
 
 class App extends Component {
   state = {
-   
-  
     pList: [
       {
         title: "Nutrition",
@@ -28,12 +25,10 @@ class App extends Component {
         alt: "Natural Hair",
       },
     ],
-  }
-  getInput = e => {
-    this.setState({[e.target.name]: e.target.value})
-  }
-  
-
+  };
+  getInput = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
   render() {
     let pList = this.state.pList.map((element, i) => {
@@ -44,7 +39,7 @@ class App extends Component {
       <div style={styles.wrapper}>
         <MyHeader pgTitle="Curls" placeholder="Search..." />
         <div style={styles.container}>
-          <MyForm  />
+          <MyForm />
         </div>
         <div style={styles.main}>{pList}</div>
       </div>
