@@ -2,30 +2,33 @@ import React from "react";
 import MyImages from "../MyImages"
 import "./MyAds.css"
 
-const MyAds = (props) => {
+const MyAds = props => {
     return(
+       
         <article style={styles.myArticle}>
             <div style={styles.flexbox}>
-            <MyImages ImageIcon={props.img} alt={props.alt} />
+            <MyImages ImageIcon={props.val.img} alt={props.val.alt} />
             </div>
            <div style={styles.cardContent}>
-            <div>
-            <h1>{props.title}</h1>
+            <div style={styles.title}>
+            <h1>{props.val.title}</h1>
             </div>
             <div>
-            <p>{props.description}</p>
+            <p>{props.val.description}</p>
             </div>
             <div style={styles.buttonContainer}>
-             <button type="submit" style={styles.cardButton}>SHARE</button>
-             <button type="submit" style={styles.cardButton}>LEARN MORE</button> 
+             <button type="submit" style={styles.cardButton}>EDIT</button>
+             <button type="submit" style={styles.cardButton}>DELETE</button> 
             </div>
             </div>
         </article>
+       
     )
 }
 export default MyAds;
 
 const styles= {
+    
     myArticle: {
         display: "flex",
         flexDirection: "column",
@@ -44,6 +47,7 @@ const styles= {
 
     buttonContainer:{
      display: "flex",
+     flex:1,
         flexDirection: "row",
         justifyContent: "space-around",
         fontSize: "1rem",
@@ -70,6 +74,12 @@ const styles= {
     cardContent: {
       textAlign: "center",
       
+    },
+    title:{
+
+    },
+    description:{
+       
     },
     
 }

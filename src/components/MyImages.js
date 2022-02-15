@@ -1,6 +1,6 @@
 import React from "react";
 // Dummy Component Component
-const MyImages = (props) => {
+const MyImages = props => {
   return <img src={props.ImageIcon} alt={props.ImageAlt} style={styles.myImages} />;
 };
 export default MyImages;

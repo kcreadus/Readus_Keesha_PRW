@@ -13,6 +13,7 @@ export default MyBtn
 
 const styles = {
     postBtn: {
+    
         backgroundColor: "#391832",
         border: "none",
   color: "white",

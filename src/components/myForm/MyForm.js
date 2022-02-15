@@ -1,17 +1,19 @@
 import React from "react";
+
 import ImageUrl from "../../images/avatarLarge.png"
 import MyAvatar from "../MyAvatar"
 import MyBtn from "../buttons/MyBtn"
 import "../buttons/MyBtn.css"
-import "./MyForm.css"
 
-const MyForm = (props) => {
 
+const MyForm = props => {
+
+  
 return (
-    <div style={styles.formContainer}>
+  
       
     <form style={styles.myForm}
-    onSubmit={props.addName}>
+    onSubmit={props.addItem}>
     
         <div style={styles.intro}>
      <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
@@ -19,21 +21,23 @@ return (
         </div>
         
          
-   <div style={styles.postContainer}>
+   <div style={styles.inputContainer}>
         <input 
-     
         style={styles.input}
+        name="title"
+        value={props.title}
+        onChange={props.getInput}
         type="text"
-        placeholder={props.title}
+        placeholder="Title..."
         />
-        <input 
-     
-     style={styles.input}
+        <input
+        style={styles.input}
+        name="description"  
+        value={props.description}
+        onChange={props.getInput}
      type="text"
-     placeholder={props.description}
-     />
-        
-       
+     placeholder="Description"
+     />    
      </div>
     
          <div style={styles.btn}>
@@ -41,41 +45,37 @@ return (
         </div>
     </form>
   
-    </div>
+  
   )
 }
 export default MyForm;
 
 const styles = { 
- formContainer: {
-  backgroundColor: "whiteSmoke",
-  color: "rgb(163,173,194)",
-  display: "flex",
-  flexDirection: "column",
-width:"100%"
- },   
+  
   myForm: {
       display: "flex",
       flexDirection: "column",
       alignItems: "start",
       height:"225px",
-      width: "90%",
+      width: "700px",
       margin: "5%",
       backgroundColor: "#9AC6C5",
       color: "black",
-      borderRadius: "2%"
+      borderRadius: "2%",
+      alignSelf: "center"
   },
-  postContainer: {
+  inputContainer: {
     display: "flex", 
     flexDirection: "row",  
     width: "100%",
     justifyContent: "center"
+  
   }, 
   input:{
       padding: "2%",
       margin: "2%",
       width: "321px",
-   
+      color: "grey"
   },
   
   span: {
