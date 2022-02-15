@@ -11,5 +11,5 @@ const styles = {
     cursor: "pointer",
     marginRight: "5%",
     borderRadius: "50%",
-  },
+  }
 };

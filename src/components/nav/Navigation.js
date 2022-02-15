@@ -10,22 +10,16 @@ const Navigation = (props) =>{
         { id: 2, title: "Messages" },
         { id: 3, title: "Watch" }
     ];
- 
-const navigation = nav.map((navigator) =>
-<ListItem key={navigator.id} value={navigator.title} />
-)
-    return(
-        <div class="menu" style={styles.navContainer}>
-        <ul>
-            {navigation}
-        </ul>
-        </div>
-    )
-
-    
-    
+    const navigation = nav.map((navigator) =>
+        <ListItem key={navigator.id} value={navigator.title} />)
+            return(
+                <div class="menu" style={styles.navContainer}>
+                    <ul>
+                        {navigation}
+                    </ul>
+                </div>
+            )
 };
-
 
 export default Navigation;
 

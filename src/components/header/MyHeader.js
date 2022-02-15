@@ -72,9 +72,7 @@ const styles = {
     flexDirection: "row",
     alignItems: "center",
     width: "15%"
-   
   },
-
   h1: {
     fontSize: "22px",
   },

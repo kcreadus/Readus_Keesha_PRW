@@ -20,12 +20,10 @@ class App extends Component {
             <MyForm placeholder="Create Post"/>
           </div>
           <aside style={styles.ads}>
-        
             <MyAds img={Hydrate}
             title="Hydration" description="The amount of water you should be drinking is likely to vary depending on your age/height/weight but I personally would recommend 2-3 litres daily!"  />
             <MyAds  img={NaturalHair}
             title="Nutition Tips" description="A study showed that 38% of women who experience hair loss were found to have a biotin deficiency."/>
-
           </aside>
         </div>
       </div>
@@ -37,7 +35,6 @@ export default App;
 const styles = {
   wrapper: {
     fontFamily: ''
-
   },
   
   container: {
@@ -50,22 +47,17 @@ const styles = {
 
   nav: {
     display: 'flex',
-    
-
   },
   main: {
     display: 'flex',
     flex: 1
-
   },
   ads: {
     backgroundColor: "#7785AC",
     color: "rgb(163,173,194)",
     display: "flex",
     flexDirection: "column",
-     width:"25%",
-alignItems: "center"
-
-},
-
+    width:"25%",
+    alignItems: "center"
+  }
 }

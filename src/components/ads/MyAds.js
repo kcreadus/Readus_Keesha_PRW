@@ -6,13 +6,13 @@ const MyAds = (props) => {
     return(
         <article style={styles.myArticle}>
             <div style={styles.flexbox}>
-            <MyImages ImageIcon={props.img} alt={props.alt} />
+                <MyImages ImageIcon={props.img} alt={props.alt} />
             </div >
             <h1>{props.title}</h1>
             <p>{props.description}</p>
             <div style={styles.buttons}>
-             <button type="submit" style={styles.cardButton}>SHARE</button>
-             <button type="submit" style={styles.cardButton}>LEARN MORE</button> 
+                <button type="submit" style={styles.cardButton}>SHARE</button>
+                <button type="submit" style={styles.cardButton}>LEARN MORE</button> 
             </div>
         </article>
     )
