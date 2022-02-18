@@ -26,8 +26,25 @@ class App extends Component {
       },
     ],
   };
+
   getInput = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    const value = e.target.value
+    this.setState({
+       ...this.state.pList,
+     [e.target.name]: value
+    });
+  };
+
+  addItem = (e) => {
+    e.preventDefault();
+
+    this.setState({
+      pList: [
+        ...this.state.pList,
+        { title: this.state.title, description: this.state.description, },
+      ],
+    });
+    e.target.reset();
   };
 
   render() {
@@ -38,10 +55,10 @@ class App extends Component {
     return (
       <div style={styles.wrapper}>
         <MyHeader pgTitle="Curls" placeholder="Search..." />
-        <div style={styles.container}>
-          <MyForm />
-        </div>
-        <div style={styles.main}>{pList}</div>
+        <main style={styles.container}>
+          <MyForm getInput={this.getInput} addItem={this.addItem} />
+          <div style={styles.main}>{pList}</div>
+        </main>
       </div>
     );
   }
@@ -58,6 +75,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     backgroundColor: "white",
+    flex: "wrap",
   },
 
   nav: {
@@ -66,7 +84,9 @@ const styles = {
   main: {
     display: "flex",
     flexDirection: "row",
+    flex: "wrap",
     width: "100%",
+
     justifyContent: "space-around",
   },
 };

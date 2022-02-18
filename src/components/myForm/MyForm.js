@@ -6,12 +6,13 @@ import MyBtn from "../buttons/MyBtn"
 import "../buttons/MyBtn.css"
 
 
+
 const MyForm = props => {
 
   
 return (
   
-      
+   
     <form style={styles.myForm}
     onSubmit={props.addItem}>
     
@@ -19,8 +20,8 @@ return (
      <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
         <span style={styles.span}>What's on you mind, Keesha?</span>
         </div>
-        
-         
+  
+     
    <div style={styles.inputContainer}>
         <input 
         style={styles.input}
@@ -30,21 +31,23 @@ return (
         type="text"
         placeholder="Title..."
         />
-        <input
+        <input 
         style={styles.input}
-        name="description"  
+        name="description"
         value={props.description}
         onChange={props.getInput}
-     type="text"
-     placeholder="Description"
-     />    
-     </div>
+        type="text"
+        placeholder="Description..."
+        />
+        
+      </div>
     
          <div style={styles.btn}>
         <MyBtn btnText="Post" /> 
         </div>
     </form>
   
+
   
   )
 }
