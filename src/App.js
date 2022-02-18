@@ -28,10 +28,10 @@ class App extends Component {
   };
 
   getInput = (e) => {
-    const value = e.target.value
+    
     this.setState({
        ...this.state.pList,
-     [e.target.name]: value
+     [e.target.name]: e.target.value
     });
   };
 
@@ -67,8 +67,8 @@ export default App;
 
 const styles = {
   wrapper: {
-    height: "100vh",
-    width: "100vw",
+    height: "100%",
+    width: "100%",
   },
 
   container: {
