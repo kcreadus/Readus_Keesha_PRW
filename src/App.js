@@ -4,6 +4,7 @@ import MyHeader from "./components/header/MyHeader";
 import MyForm from "./components/myForm/MyForm";
 import MyAds from "./components/ads/MyAds";
 import NaturalHair from "./images/naturalHair.jpg";
+import Image2 from "./images/avatarLarge.png";
 
 //ADD IMAGES
 
@@ -28,10 +29,9 @@ class App extends Component {
   };
 
   getInput = (e) => {
-    
     this.setState({
-       ...this.state.pList,
-     [e.target.name]: e.target.value
+      ...this.state.pList,
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -41,16 +41,31 @@ class App extends Component {
     this.setState({
       pList: [
         ...this.state.pList,
-        { title: this.state.title, description: this.state.description, },
+        {
+          title: this.state.title,
+          description: this.state.description,
+          img: Image2,
+        },
       ],
     });
     e.target.reset();
   };
 
+  removeItem = (key) => {
+    let pListNew = this.state.pList.filter(pList => {
+      return pListNew !== key.target.value;
+    });
+    this.setState({
+      pList: [...pListNew]
+    });
+  };
+
   render() {
     let pList = this.state.pList.map((element, i) => {
       //Pass through the key and value from the props comp.
-      return <MyAds key={i} val={element} />;
+      return (
+        <MyAds key={i} val={element} deleteMe={() => this.removeItem(i)} />
+      );
     });
     return (
       <div style={styles.wrapper}>

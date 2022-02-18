@@ -43,7 +43,7 @@ return (
       </div>
     
          <div style={styles.btn}>
-        <MyBtn btnText="Post" /> 
+       <MyBtn btnText="Post" />  
         </div>
     </form>
   

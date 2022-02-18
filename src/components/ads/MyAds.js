@@ -1,6 +1,7 @@
 import React from "react";
 import MyImages from "../MyImages"
 import "./MyAds.css"
+import PostBtn from "../buttons/PostBtn"
 
 const MyAds = props => {
     return(
@@ -17,8 +18,8 @@ const MyAds = props => {
             <p>{props.val.description}</p>
             </div>
             <div style={styles.buttonContainer}>
-             <button type="submit" style={styles.cardButton}>EDIT</button>
-             <button type="submit" style={styles.cardButton}>DELETE</button> 
+            <PostBtn btnText="Edit" />  
+            <PostBtn btnText="Delete" onClick={props.deleteMe} />  
             </div>
             </div>
         </article>
@@ -75,11 +76,6 @@ const styles= {
       textAlign: "center",
       
     },
-    title:{
-
-    },
-    description:{
-       
-    },
+    
     
 }
