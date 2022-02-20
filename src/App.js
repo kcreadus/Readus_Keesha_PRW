@@ -12,6 +12,7 @@ class App extends Component {
   state = {
     pList: [
       {
+        id: 1,
         title: "Nutrition",
         description:
           "A study showed that 38% of women who experience hair loss were found to have a biotin deficiency.",
@@ -19,6 +20,7 @@ class App extends Component {
         alt: "Natural Hair",
       },
       {
+        id: 2,
         title: "Nutrition",
         description:
           "A study showed that 38% of women who experience hair loss were found to have a biotin deficiency.",
@@ -26,7 +28,15 @@ class App extends Component {
         alt: "Natural Hair",
       },
     ],
+    color: "whiteSmoke",
+
   };
+  
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({color: "#A3320B"});
+    }, 5000);
+  }
 
   getInput = (e) => {
     this.setState({
@@ -42,6 +52,7 @@ class App extends Component {
       pList: [
         ...this.state.pList,
         {
+          id: Date.now(),
           title: this.state.title,
           description: this.state.description,
           img: Image2,
@@ -52,11 +63,23 @@ class App extends Component {
   };
 
   removeItem = (key) => {
-    let pListNew = this.state.pList.filter(pList => {
-      return pListNew !== key.target.value;
-    });
-    this.setState({
-      pList: [...pListNew]
+    let filteredList = this.state.pList.filter(list => list.id !== key);
+    this.setState({pList: filteredList
+      /*pList: [
+        ...this.state.pList,
+        {
+          title: this.state.title,
+          description: this.state.description,
+          img: Image2,
+        },
+      ], filteredList: [
+        ...this.state.filteredList,
+        {
+          title: this.state.title,
+          description: this.state.description,
+          img: Image2,
+        },
+      ],*/
     });
   };
 
@@ -64,14 +87,17 @@ class App extends Component {
     let pList = this.state.pList.map((element, i) => {
       //Pass through the key and value from the props comp.
       return (
-        <MyAds key={i} val={element} deleteMe={() => this.removeItem(i)} />
+        <MyAds key={i} val={element} deleteMe={() => this.removeItem(element.id)} />
       );
     });
     return (
       <div style={styles.wrapper}>
         <MyHeader pgTitle="Curls" placeholder="Search..." />
         <main style={styles.container}>
-          <MyForm getInput={this.getInput} addItem={this.addItem} />
+          <div style={styles.pageView}>
+          <h1 style={{color: this.state.color}}>Page Active</h1></div>
+          <MyForm getInput={this.getInput} addItem={this.addItem}
+           />
           <div style={styles.main}>{pList}</div>
         </main>
       </div>
@@ -103,5 +129,9 @@ const styles = {
     width: "100%",
 
     justifyContent: "space-around",
+    marginBottom: "50px"
   },
+  pageView: {
+   
+  }
 };

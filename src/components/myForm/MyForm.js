@@ -9,7 +9,7 @@ import "../buttons/MyBtn.css"
 
 const MyForm = props => {
 
-  
+ 
 return (
   
    
@@ -18,7 +18,7 @@ return (
     
         <div style={styles.intro}>
      <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
-        <span style={styles.span}>What's on you mind, Keesha?</span>
+        <span style={styles.span} >What's on you mind, Keesha?</span>
         </div>
   
      
@@ -61,7 +61,7 @@ const styles = {
       alignItems: "start",
       height:"225px",
       width: "700px",
-      margin: "5%",
+     marginBottom: "50px",
       backgroundColor: "#9AC6C5",
       color: "black",
       borderRadius: "2%",
