@@ -1,14 +1,18 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 
 const NavRouter = () => {
-  <nav>
+  return (
+  <nav style={styles.nav}>
     <Link to="/dashboard">Dashboard</Link>
-    <Link to="/chartDash">ChartDash</Link>
-    <Link to="/formDash">FormDash</Link>
-    <Link to="/emailDash">EmailDash</Link>
-  </nav>;
-};
+    <Link to="/reports">Reports</Link>
+    <Link to="/income">Income</Link>
+    <Link to="/spending">Spending</Link>
+    <Link to="/saving">Saving</Link>
+  </nav>
+);
+}
 export default NavRouter;
 const styles = {
   nav: {
@@ -18,7 +22,8 @@ const styles = {
     alignSelf: "stretch",
     fontSize: "1.5rem",
     alignItems: "center",
-    backgroundColor: "black",
+    background: "#7785AC",
     padding: "2",
+    width: "300px"
   },
 };

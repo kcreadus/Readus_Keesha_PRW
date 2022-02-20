@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-import Chartsmall from ""
+import React from "react";
 
-function Dashboard() {
+function Spending() {
   return (
     <section style={styles.container}>
-      <h1>Dashboard</h1>
-      <p>Place charts here</p>
+      <h1>Spending</h1>
+      <p>Some stuff here</p>
+      <p>Some stuff here</p>
     </section>
   );
 }
-export default Dashboard;
+export default Spending;
 const styles = {
   container: {
     display: "flex,",

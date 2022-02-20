@@ -1,20 +1,20 @@
 import React from "react";
 
-function ChartDash() {
+function Saving() {
   return (
-    <section>
-      <h1>ChartDash</h1>
+    <section style={styles.container}>
+      <h1>Saving</h1>
       <p>Some stuff here</p>
       <p>Some stuff here</p>
     </section>
   );
 }
-export default ChartDash;
+export default Saving;
 const styles = {
   container: {
     display: "flex,",
     flexDirection: "column",
     height: "100vh",
-    width: "99vh",
+    width: "100%",
   },
 };

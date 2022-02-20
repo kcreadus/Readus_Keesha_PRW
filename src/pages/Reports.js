@@ -1,20 +1,20 @@
 import React from "react";
 
-function FormDash() {
+function Reports() {
   return (
-    <section>
-      <h1>FormDash</h1>
+    <section style={styles.container}>
+      <h1>Reports</h1>
       <p>Some stuff here</p>
       <p>Some stuff here</p>
     </section>
   );
 }
-export default FormDash;
+export default Reports;
 const styles = {
   container: {
     display: "flex,",
     flexDirection: "column",
     height: "100vh",
-    width: "99vh",
+    width: "100%",
   },
 };

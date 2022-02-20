@@ -1,15 +1,15 @@
 import React from "react";
 
-function EmailDash() {
+function Income() {
   return (
-    <section>
-      <h1>EmailDash</h1>
+    <section style={styles.container}>
+      <h1>Income</h1>
       <p>Some stuff here</p>
       <p>Some stuff here</p>
     </section>
   );
 }
-export default EmailDash;
+export default Income;
 const styles = {
   container: {
     display: "flex,",

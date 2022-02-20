@@ -1,10 +1,12 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/header/MyHeader";
-import FormDash from "./pages/FormDash";
-import EmailDash from "./pages/EmailDash";
+import Header from "./pages/Header";
+import NavRouter from "./pages/NavRouter";
+import Income from "./pages/Income.js";
+import Saving from "./pages/Saving";
 import Dashboard from "./pages/Dashboard";
-import ChartDash from "./pages/ChartDash";
-
+import Reports from "./pages/Reports";
+import Spending from "./pages/Spending";
 //ADD IMAGES
 
 function App() {
@@ -12,14 +14,15 @@ function App() {
     <div>
       <Header />
       <main style={styles.container}>
-        <Nav style={styles.nav} />
-        <section>
+        <NavRouter />
+        <section style={styles.nav}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="chartDash" element={<ChartDash />} />
-            <Route path="formDash" element={<FormDash />} />
-            <Route path="emailDash" element={<EmailDash />} />
+            <Route path="reports" element={<Reports />} />
+            <Route path="income" element={<Income />} />
+            <Route path="saving" element={<Saving />} />
+            <Route path="spending" element={<Spending />} />
           </Routes>
         </section>
       </main>
@@ -29,16 +32,13 @@ function App() {
 export default App;
 
 const styles = {
-  wrapper: {
-    height: "100%",
-    width: "100%",
-  },
-
   container: {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "row",
     backgroundColor: "white",
     flex: "wrap",
+    width: "100vw",
+    height: "100vh",
   },
 
   nav: {
@@ -53,5 +53,4 @@ const styles = {
     justifyContent: "space-around",
     marginBottom: "50px",
   },
-  pageView: {},
 };
