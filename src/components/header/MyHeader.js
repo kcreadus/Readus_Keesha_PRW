@@ -71,8 +71,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    width: "15%"
-   
+    width: "15%",
   },
 
   h1: {
@@ -82,7 +81,6 @@ const styles = {
     height: "2em",
     width: "2em",
     cursor: "pointer",
-    
   },
   searchIcon: {
     background: "#7785AC",

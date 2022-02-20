@@ -3,8 +3,6 @@ import MyImages from "../MyImages";
 import "./MyAds.css";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 
-
-
 const MyAds = (props) => {
   return (
     <article style={styles.myArticle}>
@@ -20,7 +18,7 @@ const MyAds = (props) => {
         </div>
         <div style={styles.buttonContainer}>
           <AiFillEdit style={styles.icons} />
-          <AiFillDelete  style={styles.icons} onClick={props.deleteMe} />
+          <AiFillDelete style={styles.icons} onClick={props.deleteMe} />
         </div>
       </div>
     </article>
@@ -40,8 +38,6 @@ const styles = {
     overflow: "hidden",
     borderRadius: "15px",
     boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
-
-  
   },
 
   buttonContainer: {
@@ -72,10 +68,10 @@ const styles = {
   cardContent: {
     textAlign: "center",
   },
-  icons:{
+  icons: {
     height: "2em",
     width: "2em",
     cursor: "pointer",
-    color: "#A3320B"
-  }
+    color: "#A3320B",
+  },
 };

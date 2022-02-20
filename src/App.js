@@ -29,12 +29,11 @@ class App extends Component {
       },
     ],
     color: "whiteSmoke",
-
   };
-  
+
   componentDidMount() {
     setTimeout(() => {
-      this.setState({color: "#A3320B"});
+      this.setState({ color: "#A3320B" });
     }, 5000);
   }
 
@@ -63,23 +62,9 @@ class App extends Component {
   };
 
   removeItem = (key) => {
-    let filteredList = this.state.pList.filter(list => list.id !== key);
-    this.setState({pList: filteredList
-      /*pList: [
-        ...this.state.pList,
-        {
-          title: this.state.title,
-          description: this.state.description,
-          img: Image2,
-        },
-      ], filteredList: [
-        ...this.state.filteredList,
-        {
-          title: this.state.title,
-          description: this.state.description,
-          img: Image2,
-        },
-      ],*/
+    let filteredList = this.state.pList.filter((list) => list.id !== key);
+    this.setState({
+      pList: filteredList,
     });
   };
 
@@ -87,7 +72,11 @@ class App extends Component {
     let pList = this.state.pList.map((element, i) => {
       //Pass through the key and value from the props comp.
       return (
-        <MyAds key={i} val={element} deleteMe={() => this.removeItem(element.id)} />
+        <MyAds
+          key={i}
+          val={element}
+          deleteMe={() => this.removeItem(element.id)}
+        />
       );
     });
     return (
@@ -95,9 +84,9 @@ class App extends Component {
         <MyHeader pgTitle="Curls" placeholder="Search..." />
         <main style={styles.container}>
           <div style={styles.pageView}>
-          <h1 style={{color: this.state.color}}>Page Active</h1></div>
-          <MyForm getInput={this.getInput} addItem={this.addItem}
-           />
+            <h1 style={{ color: this.state.color }}>Page Active</h1>
+          </div>
+          <MyForm getInput={this.getInput} addItem={this.addItem} />
           <div style={styles.main}>{pList}</div>
         </main>
       </div>
@@ -129,9 +118,7 @@ const styles = {
     width: "100%",
 
     justifyContent: "space-around",
-    marginBottom: "50px"
+    marginBottom: "50px",
   },
-  pageView: {
-   
-  }
+  pageView: {},
 };
