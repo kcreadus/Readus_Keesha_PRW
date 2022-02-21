@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./pages/Header";
 import NavRouter from "./pages/NavRouter";
-import Income from "./pages/Income.js";
+import Income from "./pages/Income.js.";
 import Saving from "./pages/Saving";
 import Dashboard from "./pages/Dashboard";
 import Reports from "./pages/Reports";
@@ -12,7 +11,6 @@ import Spending from "./pages/Spending";
 function App() {
   return (
     <div>
-      <Header />
       <main style={styles.container}>
         <NavRouter />
         <section style={styles.nav}>
@@ -36,13 +34,16 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     backgroundColor: "white",
-    flex: "wrap",
+
     width: "100vw",
     height: "100vh",
+    padding: "1%",
   },
 
   nav: {
     display: "flex",
+    width: "100%",
+ 
   },
   main: {
     display: "flex",
