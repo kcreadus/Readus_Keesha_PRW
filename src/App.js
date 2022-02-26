@@ -1,11 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NavRouter from "./pages/NavRouter";
-import Income from "./pages/Income.js.";
+import Income from "./pages/Income";
 import Saving from "./pages/Saving";
 import Dashboard from "./pages/Dashboard";
 import Reports from "./pages/Reports";
 import Spending from "./pages/Spending";
+import Settings from "./pages/Settings";
 //ADD IMAGES
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="income" element={<Income />} />
             <Route path="saving" element={<Saving />} />
             <Route path="spending" element={<Spending />} />
+            <Route path="settings" element={<Settings />} />
           </Routes>
         </section>
       </main>

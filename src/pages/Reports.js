@@ -1,15 +1,15 @@
 import React from "react";
+import Header from "./Header";
 
 function Reports() {
   return (
     <section style={styles.container}>
-      <h1>Reports</h1>
-      <p>Some stuff here</p>
-      <p>Some stuff here</p>
+      <Header pgTitle="Reports" />
     </section>
   );
 }
 export default Reports;
+
 const styles = {
   container: {
     display: "flex,",

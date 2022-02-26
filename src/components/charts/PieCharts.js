@@ -55,14 +55,14 @@ const data02 = [
 ];
 const PieCharts = () => {
   return (
-    <PieChart width={400} height={240}>
+    <PieChart width={400} height={200}>
       <Pie
         data={data01}
         dataKey="value"
         cx="50%"
         cy="50%"
         outerRadius={40}
-        fill="#8884d8"
+        fill="#391832"
       />
       <Pie
         data={data02}
@@ -71,7 +71,7 @@ const PieCharts = () => {
         cy="50%"
         innerRadius={50}
         outerRadius={70}
-        fill="#82ca9d"
+        fill="#A3320B"
         label
       />
     </PieChart>

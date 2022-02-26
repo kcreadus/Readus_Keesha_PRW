@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "./Header";
 
-function Spending() {
+function Income() {
   return (
     <section style={styles.container}>
-     <Header pgTitle="Spending" />
+      <Header pgTitle="Income" />
       <p>Some stuff here</p>
       <p>Some stuff here</p>
     </section>
   );
 }
-export default Spending;
+export default Income;
 const styles = {
   container: {
     display: "flex,",

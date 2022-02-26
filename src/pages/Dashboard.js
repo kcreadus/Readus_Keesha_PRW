@@ -23,12 +23,11 @@ function Dashboard() {
   return (
     <section style={styles.container}>
       <Header pgTitle="Dashboard" />
-    
-        <div style={styles.chartHorz}>
-          {chartHorz.map((chartHorz, id) => (
-            <ChartHorz key={id} id={id} chartHorz={chartHorz} />
-          ))}
-       
+
+      <div style={styles.chartHorz}>
+        {chartHorz.map((chartHorz, id) => (
+          <ChartHorz key={id} id={id} chartHorz={chartHorz} />
+        ))}
       </div>
       <div style={styles.row}>
         {chartSmall.map((chartSmall, id) => (
@@ -49,25 +48,21 @@ const styles = {
   container: {
     display: "flex",
     flexDirection: "column",
-    paddingLeft: "2%",
-    paddingRight: "2%",
+    height: "100vh",
     width: "100%",
   },
 
-  
   row: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    marginRight: "1.5rem"
+    marginRight: "1.5rem",
   },
-  
 
-  
   chartHorz: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    marginRight: "1.5rem"
+    marginRight: "1.5rem",
   },
 };

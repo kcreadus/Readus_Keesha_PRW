@@ -1,20 +1,21 @@
 import React from "react";
+import Header from "./Header";
 
-function Income() {
+function Settings() {
   return (
     <section style={styles.container}>
-      <h1>Income</h1>
+     <Header pgTitle="Settings" />
       <p>Some stuff here</p>
       <p>Some stuff here</p>
     </section>
   );
 }
-export default Income;
+export default Settings;
 const styles = {
   container: {
     display: "flex,",
     flexDirection: "column",
     height: "100vh",
-    width: "99vh",
+    width: "100%",
   },
 };

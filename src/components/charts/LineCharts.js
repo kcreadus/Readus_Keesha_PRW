@@ -71,7 +71,7 @@ const LineCharts = props => {
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
-      <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+      <Area type="monotone" dataKey="uv" stroke="#391832" fill="#7785AC" />
     </AreaChart>
     </ResponsiveContainer>
   );

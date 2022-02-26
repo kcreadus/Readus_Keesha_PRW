@@ -1,5 +1,5 @@
 import React from "react";
-import { LineChart, Line} from "recharts";
+import { LineChart, Line } from "recharts";
 
 const data = [
   {
@@ -49,7 +49,7 @@ const data = [
 const HorzLineCharts = (props) => {
   return (
     <LineChart width={650} height={50} data={data}>
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
+      <Line type="monotone" dataKey="pv" stroke="#A3320B" strokeWidth={2} />
     </LineChart>
   );
 };

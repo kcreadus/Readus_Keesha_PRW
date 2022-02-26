@@ -3,7 +3,8 @@ import React from "react";
 import ImageUrl from "../images/avatar.png";
 import MyAvatar from "../components/MyAvatar";
 import { FaCog } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
+//I enclosed my avatar with the link tag a set the path to the settings page
 const Header = (props) => {
   return (
     <header style={styles.header}>
@@ -12,7 +13,9 @@ const Header = (props) => {
       </div>
 
       <div style={styles.rightSide}>
-        <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
+        <Link to="/settings">
+          <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
+        </Link>
         <span style={styles.span}>Keesha Readus</span>
         <FaCog style={styles.cog} />
       </div>
@@ -31,13 +34,11 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-  
-  
   },
   left: {
     display: "flex",
     flexDirection: "row",
-    marginLeft: "2rem"
+    marginLeft: "2rem",
   },
 
   rightSide: {
@@ -45,7 +46,7 @@ const styles = {
     flexDirection: "row",
     alignItems: "center",
     width: "15%",
-    marginRight: "4rem"
+    marginRight: "4rem",
   },
 
   h1: {
