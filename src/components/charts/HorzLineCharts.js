@@ -45,7 +45,7 @@ const data = [
     amt: 2100,
   },
 ];
-
+//changed colors
 const HorzLineCharts = (props) => {
   return (
     <LineChart width={650} height={50} data={data}>
