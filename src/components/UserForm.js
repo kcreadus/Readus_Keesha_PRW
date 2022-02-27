@@ -1,14 +1,20 @@
 import React from "react";
+import MyBtn from "./buttons/MyBtn";
 
 const UserForm = (props) => {
   return (
     <div style={styles.pForm}>
       <div style={styles.header}>
         <h1>Profile</h1>
-        <img style={styles.img} src={props.avatar} alt="profile"/>
+        <img style={styles.img} src={props.avatar} alt="profile" />
         <div>
-      
-        <input type="text" style={styles.uName} value={props.userName} placeholder="User Name:" />
+          <input
+            type="text"
+            style={styles.uName}
+            value={props.userName}
+            placeholder="User Name:"
+            readOnly
+          />
         </div>
       </div>
       <form>
@@ -18,12 +24,14 @@ const UserForm = (props) => {
             style={styles.input2}
             value={props.fName}
             placeholder="First Name:"
+            readOnly
           />
           <input
             type="text"
             style={styles.input2}
             value={props.lName}
             placeholder="Last Name:"
+            readOnly
           />
         </div>
         <div>
@@ -32,6 +40,7 @@ const UserForm = (props) => {
             style={styles.input1}
             value={props.address}
             placeholder="Address:"
+            readOnly
           />
         </div>
         <div style={styles.inputContainer}>
@@ -40,12 +49,14 @@ const UserForm = (props) => {
             style={styles.input2}
             value={props.city}
             placeholder="City:"
+            readOnly
           />
           <input
             type="text"
             style={styles.input2}
             value={props.state}
             placeholder="State:"
+            readOnly
           />
         </div>
         <div style={styles.inputContainer}>
@@ -54,6 +65,7 @@ const UserForm = (props) => {
             style={styles.input2}
             value={props.zipCode}
             placeholder="Postal Code:"
+            readOnly
           />
           <input
             type="tel"
@@ -61,6 +73,7 @@ const UserForm = (props) => {
             value={props.pNumber}
             pattern="\d{10}"
             placeholder="Phone Number:"
+            readOnly
           />
         </div>
         <div>
@@ -69,8 +82,10 @@ const UserForm = (props) => {
             style={styles.input1}
             value={props.password}
             placeholder="Password:"
+            readOnly
           />
         </div>
+        <MyBtn btnText="Save"/>
       </form>
     </div>
   );
@@ -83,17 +98,17 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     width: "30%",
-    height: "60%",
+    height: "70%",
     backgroundColor: "#7785AC",
     color: "#391832",
   },
   input1: {
     display: "flex",
     width: "91%",
-    padding: "10px",
+    padding: "2%",
     fontWeight: "normal",
     background: "none",
-    border: "1px solid #8FA4B9",
+    border: "1px solid #A5E6BA",
     color: "#fff",
     outline: "none",
     fontSize: "14px",
@@ -106,10 +121,10 @@ const styles = {
   input2: {
     display: "flex",
     width: "42%",
-    padding: "10px",
+    padding: "2%",
     fontWeight: "normal",
     background: "none",
-    border: "1px solid #8FA4B9",
+    border: "1px solid #A5E6BA",
     color: "#fff",
     outline: "none",
     fontSize: "14px",
@@ -124,24 +139,23 @@ const styles = {
     justifyContent: "space-between",
   },
   header: {
-    
     borderBottom: "none",
     textAlign: "center",
     padding: "2%",
-    height: "30%"
+    height: "30%",
   },
   img: {
-    borderRadius: "50%"
-   
+    borderRadius: "50%",
   },
-uName:{
-  width: "42%",
+  uName: {
+    width: "42%",
     padding: "1%",
     fontWeight: "bold",
     background: "none",
     color: "#fff",
     outline: "none",
     fontSize: "14px",
-   textAlign: "center",
-}
+    textAlign: "center",
+   
+  },
 };

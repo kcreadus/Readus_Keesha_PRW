@@ -12,15 +12,18 @@ export default MyBtn;
 
 const styles = {
   postBtn: {
+    display: "flex",
     backgroundColor: "#391832",
     border: "none",
-    color: "white",
-    textAlign: "center",
-    textDecoration: "none",
-    display: "inlineBlock",
     fontSize: "16px",
-    width: "670px",
     cursor: "pointer",
-    borderRadius: "6px",
+    width: "96%",
+    fontWeight: "bold",
+    color: "#fff",
+    marginTop: "6%",
+    marginRight: "2%",
+    marginBottom: "2%",
+    marginLeft: "2%",
+    justifyContent: "center",
   },
 };

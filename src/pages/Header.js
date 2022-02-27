@@ -2,7 +2,7 @@ import React from "react";
 // import Component
 import ImageUrl from "../images/avatar.png";
 import MyAvatar from "../components/MyAvatar";
-import { FaCog } from "react-icons/fa";
+import { AiFillNotification } from "react-icons/ai";
 import { Link } from "react-router-dom";
 //I enclosed my avatar with the link tag a set the path to the settings page
 const Header = (props) => {
@@ -11,13 +11,12 @@ const Header = (props) => {
       <div style={styles.left}>
         <h1 style={styles.h1}>{props.pgTitle}</h1>
       </div>
-
       <div style={styles.rightSide}>
         <Link to="/settings">
           <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
         </Link>
         <span style={styles.span}>Keesha Readus</span>
-        <FaCog style={styles.cog} />
+        <AiFillNotification style={styles.notification} />
       </div>
     </header>
   );
@@ -52,7 +51,7 @@ const styles = {
   h1: {
     fontSize: "22px",
   },
-  cog: {
+  notification: {
     height: "2em",
     width: "2em",
     cursor: "pointer",
