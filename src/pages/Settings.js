@@ -10,6 +10,8 @@ function Settings() {
       const response = await fetch("https://randomuser.me/api/");
 
       const data = await response.json();
+      const [user] = data.results;
+      /*
       const [user] = data.results.results.map((user) =>
         setuserData({
           userName: `${user.login.username}`,
@@ -22,7 +24,7 @@ function Settings() {
           pNumber: `${user.phone}`,
           password: `${user.login.password}`,
         })
-      ); //   console.log(user)
+      ); //   console.log(user)*/
       setuserData(user);
     }
     fetchAPI();
@@ -31,8 +33,20 @@ function Settings() {
   return (
     <section style={styles.container}>
       <Header pgTitle="Settings" />
-      <p>Some stuff here</p>
-      <p>Some stuff here</p>
+    {userData && <UserForm
+    avatar={userData.picture.thumbnail}
+     userName={userData.login.username}
+     fName={userData.name.first}
+     lName={userData.name.last}
+     address={userData.location.street.name}
+     city={userData.location.city}
+     state={userData.location.state}
+     zipCode={userData.location.postcode}
+     pNumber={userData.phone}
+     password={userData.login.password}
+    />
+    }
+      
     </section>
   );
 }

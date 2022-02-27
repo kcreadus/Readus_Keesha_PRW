@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const UserForm = (props) => {
   return (
     <div style={styles.pForm}>
@@ -42,8 +41,8 @@ const styles = {
   pForm: {
     display: "flex",
     flexDirection: "column",
-    width: "400px",
-    height: "8000px",
+    width: "30%",
+    height: "60%",
     backgroundColor: "whiteSmoke",
     color: "black",
   },
