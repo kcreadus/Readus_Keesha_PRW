@@ -5,8 +5,11 @@ const UserForm = (props) => {
     <div style={styles.pForm}>
       <div style={styles.header}>
         <h1>Profile</h1>
-        <img src={props.avatar} alt="profile" />
-        <input type="text" value={props.userName} placeholder="User Name:" />
+        <img style={styles.img} src={props.avatar} alt="profile"/>
+        <div>
+      
+        <input type="text" style={styles.uName} value={props.userName} placeholder="User Name:" />
+        </div>
       </div>
       <form>
         <div style={styles.inputContainer}>
@@ -82,7 +85,7 @@ const styles = {
     width: "30%",
     height: "60%",
     backgroundColor: "#7785AC",
-    color: "black",
+    color: "#391832",
   },
   input1: {
     display: "flex",
@@ -121,8 +124,24 @@ const styles = {
     justifyContent: "space-between",
   },
   header: {
+    
     borderBottom: "none",
     textAlign: "center",
     padding: "2%",
+    height: "30%"
   },
+  img: {
+    borderRadius: "50%"
+   
+  },
+uName:{
+  width: "42%",
+    padding: "1%",
+    fontWeight: "bold",
+    background: "none",
+    color: "#fff",
+    outline: "none",
+    fontSize: "14px",
+   textAlign: "center",
+}
 };

@@ -34,11 +34,11 @@ function Settings() {
     <section style={styles.container}>
       <Header pgTitle="Settings" />
     {userData && <UserForm
-    avatar={userData.picture.thumbnail}
+    avatar={userData.picture.medium}
      userName={userData.login.username}
      fName={userData.name.first}
      lName={userData.name.last}
-     address={userData.location.street.name}
+     address={userData.location.street.number + " " + userData.location.street.name}
      city={userData.location.city}
      state={userData.location.state}
      zipCode={userData.location.postcode}
