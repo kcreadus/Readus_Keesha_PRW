@@ -3,7 +3,8 @@ import React from "react";
 const UserForm = (props) => {
   return (
     <div style={styles.pForm}>
-      <div>
+      <div style={styles.header}>
+        <h1>Profile</h1>
         <img src={props.avatar} alt="profile" />
         <input type="text" value={props.userName} placeholder="User Name:" />
       </div>
@@ -52,15 +53,16 @@ const UserForm = (props) => {
             placeholder="Postal Code:"
           />
           <input
-            type="text"
+            type="tel"
             style={styles.input2}
             value={props.pNumber}
+            pattern="\d{10}"
             placeholder="Phone Number:"
           />
         </div>
         <div>
           <input
-            type="text"
+            type="password"
             style={styles.input1}
             value={props.password}
             placeholder="Password:"
@@ -117,5 +119,10 @@ const styles = {
   inputContainer: {
     display: "flex",
     justifyContent: "space-between",
+  },
+  header: {
+    borderBottom: "none",
+    textAlign: "center",
+    padding: "2%",
   },
 };
