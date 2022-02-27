@@ -45,7 +45,6 @@ const styles = {
   nav: {
     display: "flex",
     width: "100%",
- 
   },
   main: {
     display: "flex",

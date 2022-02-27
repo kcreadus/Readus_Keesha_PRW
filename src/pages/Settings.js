@@ -8,7 +8,6 @@ function Settings() {
   useEffect(() => {
     async function fetchAPI() {
       const response = await fetch("https://randomuser.me/api/");
-
       const data = await response.json();
       const [user] = data.results;
       setuserData(user);
