@@ -1,5 +1,4 @@
 import React from "react";
-
 import ImageUrl from "../../images/avatarLarge.png";
 import MyAvatar from "../MyAvatar";
 import MyBtn from "../buttons/MyBtn";
@@ -12,7 +11,6 @@ const MyForm = (props) => {
         <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
         <span style={styles.span}>What's on you mind, Keesha?</span>
       </div>
-
       <div style={styles.inputContainer}>
         <input
           style={styles.input}
@@ -31,7 +29,6 @@ const MyForm = (props) => {
           placeholder="Description..."
         />
       </div>
-
       <div style={styles.btn}>
         <MyBtn btnText="Post" />
       </div>
@@ -65,7 +62,6 @@ const styles = {
     width: "321px",
     color: "grey",
   },
-
   span: {
     whiteSpace: "nowrap",
     marginLeft: "0%",
@@ -79,8 +75,7 @@ const styles = {
     fontSize: "1.2rem",
     justifyContent: "center",
   },
-
   btn: {
     alignSelf: "center",
-  },
+  }
 };

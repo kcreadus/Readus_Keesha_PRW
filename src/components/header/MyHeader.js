@@ -73,7 +73,6 @@ const styles = {
     alignItems: "center",
     width: "15%",
   },
-
   h1: {
     fontSize: "22px",
   },
@@ -92,5 +91,5 @@ const styles = {
   span: {
     whiteSpace: "nowrap",
     marginRight: "10%",
-  },
+  }
 };

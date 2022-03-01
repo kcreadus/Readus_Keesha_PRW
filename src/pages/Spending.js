@@ -4,7 +4,7 @@ import Header from "./Header";
 function Spending() {
   return (
     <section style={styles.container}>
-     <Header pgTitle="Spending" />
+      <Header pgTitle="Spending" />
       <p>Some stuff here</p>
       <p>Some stuff here</p>
     </section>

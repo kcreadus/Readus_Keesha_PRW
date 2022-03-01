@@ -22,7 +22,6 @@ const styles = {
     backgroundColor: "white",
     minHeight: "50%",
     width: "50%",
-  
     padding: "1rem",
     marginRight: "1rem"
   },

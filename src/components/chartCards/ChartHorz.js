@@ -13,13 +13,13 @@ const ChartHorz = ({ chartHorz }) => {
 export default ChartHorz;
 
 const styles = {
-    card: {
-        boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-        transition: "0.3s",
-        minHeight: "50%",
-        backgroundColor: "white",
-        margin: "0.5rem",
-        padding: "0.5rem",
-        width: "50%"
-    },
+  card: {
+    boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+    transition: "0.3s",
+    minHeight: "50%",
+    backgroundColor: "white",
+    margin: "0.5rem",
+    padding: "0.5rem",
+    width: "50%"
+  }
 }

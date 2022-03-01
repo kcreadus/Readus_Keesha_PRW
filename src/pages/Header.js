@@ -39,7 +39,6 @@ const styles = {
     flexDirection: "row",
     marginLeft: "2rem",
   },
-
   rightSide: {
     display: "flex",
     flexDirection: "row",
@@ -47,7 +46,6 @@ const styles = {
     width: "15%",
     marginRight: "4rem",
   },
-
   h1: {
     fontSize: "22px",
   },
@@ -56,7 +54,6 @@ const styles = {
     width: "2em",
     cursor: "pointer",
   },
-
   span: {
     whiteSpace: "nowrap",
     marginRight: "10%",

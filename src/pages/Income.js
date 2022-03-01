@@ -11,6 +11,7 @@ function Income() {
   );
 }
 export default Income;
+
 const styles = {
   container: {
     display: "flex,",
