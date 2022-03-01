@@ -36,24 +36,21 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     backgroundColor: "white",
-
-    width: "100vw",
-    height: "100vh",
-    padding: "1%",
+    // width: "100vw",
+    // height: "100vh",
+    // padding: "1%",
   },
 
   nav: {
     display: "flex",
     width: "100%",
- 
   },
   main: {
     display: "flex",
     flexDirection: "row",
     flex: "wrap",
     width: "100%",
-
     justifyContent: "space-around",
     marginBottom: "50px",
-  },
+  }
 };

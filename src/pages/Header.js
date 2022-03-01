@@ -11,7 +11,6 @@ const Header = (props) => {
       <div style={styles.left}>
         <h1 style={styles.h1}>{props.pgTitle}</h1>
       </div>
-
       <div style={styles.rightSide}>
         <Link to="/settings">
           <MyAvatar AvatarIcon={ImageUrl} alt="Avatar" />
@@ -40,7 +39,6 @@ const styles = {
     flexDirection: "row",
     marginLeft: "2rem",
   },
-
   rightSide: {
     display: "flex",
     flexDirection: "row",
@@ -48,7 +46,6 @@ const styles = {
     width: "15%",
     marginRight: "4rem",
   },
-
   h1: {
     fontSize: "22px",
   },
@@ -57,9 +54,8 @@ const styles = {
     width: "2em",
     cursor: "pointer",
   },
-
   span: {
     whiteSpace: "nowrap",
     marginRight: "10%",
-  },
+  }
 };
